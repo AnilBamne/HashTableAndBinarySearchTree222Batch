@@ -8,7 +8,7 @@ namespace HashTableAndBinarySearchTree222Batch
         {
             Console.WriteLine("Welcome to HashTable And BinarySearchTree Programs");
             Console.WriteLine("\nPlease choose program number to execute");
-            Console.WriteLine("1:Hash table uc1\n2:Hash table uc2\n3:Hash table uc3\n4:");
+            Console.WriteLine("1:Hash table uc1\n2:Hash table uc2\n3:Hash table uc3\n4:Binary Search tree uc1\n5:Binary Search tree uc2\n6:Binary Search tree uc3");
             int input = Convert.ToInt32(Console.ReadLine());
 
             switch (input)
@@ -24,6 +24,16 @@ namespace HashTableAndBinarySearchTree222Batch
                 case 3:
                     String paragraph3 = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
                     CountNumbOfOccurence(paragraph3);
+                    break;
+                case 4:
+                    BinarySearchTree<int> bst = new BinarySearchTree<int>(56);
+                    bst.Insert(30);
+                    bst.Insert(70);
+                    bst.Display();
+                    break;
+                case 5:
+                    break;
+                case 6:
                     break;
                 default:
                     break;

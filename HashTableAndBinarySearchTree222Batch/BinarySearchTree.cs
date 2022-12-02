@@ -23,7 +23,9 @@ namespace HashTableAndBinarySearchTree222Batch
             this.leftTree = null;
             this.rightTree = null;
         }
-        
+        //variables
+        int leftCount = 0;
+        int rightCount = 0;
         // Insert method to add the specified item.
         public void Insert(T item)
         {
@@ -34,6 +36,7 @@ namespace HashTableAndBinarySearchTree222Batch
                     this.leftTree = new BinarySearchTree<T>(item);
                 else
                     this.leftTree.Insert(item);
+                    leftCount++;                                    //counting no of elements inserted.
             }
             else
             {
@@ -41,6 +44,7 @@ namespace HashTableAndBinarySearchTree222Batch
                     this.rightTree = new BinarySearchTree<T>(item);
                 else
                     this.rightTree.Insert(item);
+                    rightCount++;
             }
         }
         // Display methode to display the nodes.
@@ -55,6 +59,11 @@ namespace HashTableAndBinarySearchTree222Batch
             {
                 this.rightTree.Display();
             }
+        }
+        // Size method for checking whether all the elements shown in figure and BST are equal.
+        public void getSize()
+        {
+            Console.WriteLine("Size of BST is = " + (1 + this.leftCount + this.rightCount));
         }
     }
 }

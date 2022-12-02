@@ -64,7 +64,7 @@ namespace HashTableAndBinarySearchTree222Batch
                     binarySearchTree1.Insert(67);
                     binarySearchTree1.Display();
                     binarySearchTree1.getSize();
-                    bool result = binarySearchTree1.IsExists(3, binarySearchTree1);
+                    bool result = binarySearchTree1.IsExists(63, binarySearchTree1);
                     Console.WriteLine(result);
                     break;
                 default:

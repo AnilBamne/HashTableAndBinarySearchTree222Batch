@@ -75,7 +75,7 @@ namespace HashTableAndBinarySearchTree222Batch
             }
             else if (node.NodeData.Equals(element))                     //first node
             {
-                Console.WriteLine("{0} Found in BST = ",node.NodeData);
+                Console.WriteLine("{0} Found in BST : ",node.NodeData);
                 result= true;
             }
             else

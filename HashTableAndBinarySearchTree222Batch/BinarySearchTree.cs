@@ -26,6 +26,7 @@ namespace HashTableAndBinarySearchTree222Batch
         //variables
         int leftCount = 0;
         int rightCount = 0;
+        bool result = false;
         // Insert method to add the specified item.
         public void Insert(T item)
         {
@@ -64,6 +65,32 @@ namespace HashTableAndBinarySearchTree222Batch
         public void getSize()
         {
             Console.WriteLine("Size of BST is = " + (1 + this.leftCount + this.rightCount));
+        }
+        // Is exists method check the specific element in BST.
+        public bool IsExists(T element, BinarySearchTree<T> node)       //uc3
+        {
+            if (node == null)       //tree is empty
+            {
+                result = false;
+            }
+            else if (node.NodeData.Equals(element))                     //first node
+            {
+                Console.WriteLine("{0} Found in BST = ",node.NodeData);
+                result= true;
+            }
+            else
+            {
+                Console.WriteLine("Current element is  in BST = " + node.NodeData);
+                if (element.CompareTo(node.NodeData) < 0)               //search in left tree
+                {
+                    IsExists(element, node.leftTree);
+                }
+                else if (element.CompareTo(node.NodeData) > 0)               //search in right tree
+                {
+                    IsExists(element, node.rightTree);
+                }
+            }
+            return result;
         }
     }
 }

@@ -49,6 +49,23 @@ namespace HashTableAndBinarySearchTree222Batch
                     binarySearchTree.getSize();
                     break;
                 case 6:
+                    BinarySearchTree<int> binarySearchTree1 = new BinarySearchTree<int>(56);
+                    binarySearchTree1.Insert(30);
+                    binarySearchTree1.Insert(70);
+                    binarySearchTree1.Insert(22);
+                    binarySearchTree1.Insert(40);
+                    binarySearchTree1.Insert(60);
+                    binarySearchTree1.Insert(95);
+                    binarySearchTree1.Insert(11);
+                    binarySearchTree1.Insert(65);
+                    binarySearchTree1.Insert(3);
+                    binarySearchTree1.Insert(16);
+                    binarySearchTree1.Insert(63);
+                    binarySearchTree1.Insert(67);
+                    binarySearchTree1.Display();
+                    binarySearchTree1.getSize();
+                    bool result = binarySearchTree1.IsExists(3, binarySearchTree1);
+                    Console.WriteLine(result);
                     break;
                 default:
                     break;

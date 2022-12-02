@@ -14,10 +14,12 @@ namespace HashTableAndBinarySearchTree222Batch
             switch (input)
             {
                 case 1:
-                    String paragraph = "To be or not to be";
-                    CountNumbOfOccurence(paragraph);
+                    String paragraph1 = "To be or not to be";
+                    CountNumbOfOccurence(paragraph1);
                     break;
                 case 2:
+                    String paragraph2 = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+                    CountNumbOfOccurence(paragraph2);
                     break;
                 case 3:
                     break;

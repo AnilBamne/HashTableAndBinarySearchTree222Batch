@@ -22,6 +22,8 @@ namespace HashTableAndBinarySearchTree222Batch
                     CountNumbOfOccurence(paragraph2);
                     break;
                 case 3:
+                    String paragraph3 = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+                    CountNumbOfOccurence(paragraph3);
                     break;
                 default:
                     break;
@@ -42,6 +44,11 @@ namespace HashTableAndBinarySearchTree222Batch
                     hashTabe.Add(word.ToLower(), 1); //to,1 
             }
             Console.WriteLine("Words and their occurance is : ");
+            hashTabe.Display();
+            //Hash table uc3 : removing "avoidable" word from the paragraph and printing occurances again
+            string removeWord = "avoidable";                                   
+            hashTabe.Remove(removeWord);
+            Console.WriteLine("\n Removed an word --> {0}\n", removeWord);
             hashTabe.Display();
         }
     }
